@@ -93,4 +93,8 @@ Examples:
     
 */
 
-function hasCertainValue(arr, key, searchValue) {}
+function hasCertainValue(arr, key, searchValue) {
+    return arr.every(function(obj){
+        return obj[key] === searchValue
+    })
+}
